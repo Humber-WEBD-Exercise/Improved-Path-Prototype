@@ -1,0 +1,217 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main{
+  height: 1920px;
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header{
+  height: 167px;
+}
+
+.content{
+  height: 1653px;
+  position: relative;
+}
+
+/*map area*/
+.map{
+  margin: 0 auto;
+  display: block;
+  padding: 23px 0;
+  overflow: hidden;
+}
+
+.location-pin{
+  position: absolute;
+  top: 487px;
+  right: 320px;
+}
+
+.location-label{
+  position: absolute;
+  top: 615px;
+  right: 280px;
+}
+
+.map-radius{
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  opacity: 0;
+}
+
+.map-type{
+  position: absolute;
+  top: 850px;
+  right: 50px;
+}
+
+.map-type img{
+  display: block;
+  margin: 10px auto;
+}
+
+.location-flag, .location-path{
+  position: absolute;
+  display: none;
+}
+.location-flag1{
+  top: 340px;
+  right: 50px;
+}
+.location-flag2{
+  top: 320px;
+  left: 300px;
+}
+.location-flag3{
+  bottom: 506px;
+  left: 403px;
+}
+.location-path1{
+  top: 480px;
+  right: 150px;
+}
+.location-path2{
+  top: 480px;
+  left: 420px;
+}
+.location-path3{
+  bottom: 542px;
+  right: 206px;
+}
+
+ /*nav bar area*/
+
+.nav-bar{
+  background: url("../images/nav.png") no-repeat 0 -14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 263px;
+  height: 1279px;
+  padding-top: 201px;
+}
+
+.nav-bar button{
+  width: 250px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.cat-list{
+  position: absolute;
+  top: 0;
+  left: -313px;
+  width: 313px;
+  height: 1267px;
+  overflow: hidden;
+}
+
+.store-list{
+  background: url("../images/store-alpha.png") no-repeat 0 -5px;
+}
+
+.dining-list{
+  background: url("../images/dining-alpha.png") no-repeat 0 -5px;
+}
+
+.attraction-list{
+  background: url("../images/attraction-alpha.png") no-repeat 0 -5px;
+}
+
+.step-list{
+  background: url("../images/step2.png") no-repeat 0 -5px;
+}
+
+.cat-list .close-btn{
+  width: 120px;
+  height: 50px;
+  margin: 20px 0 0 15px;
+}
+
+.cat-list .filter{
+  margin-top: 75px;
+}
+
+.cat-list button{
+  height: 80px;
+}
+
+.cat-list .alpha-btn{
+  width: 120px;
+}
+
+.cat-list .cat-btn{
+  width: 170px;
+}
+
+.scroll-area{
+  overflow-y: scroll;
+  margin-top: 20px;
+  padding-left: 22px;
+  padding-bottom: 20px;
+  height: 970px;
+  width: 280px;
+}
+
+
+/*other content*/
+.content-container{
+  height: 1653px;
+  display: none;
+}
+
+.content-container button{
+  width: 156px;
+  height: 50px;
+  position: absolute;
+}
+
+.content-container .back-btn{
+  top: 47px;
+  left: 24px;
+}
+
+.poster-content{
+  background: url("../images/poster-content.png") no-repeat 0 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.direction-btn{
+  bottom: 350px;
+  left: 110px;
+}
+
+.promo-content{
+  background: url("../images/promo-content.png") no-repeat 0 -4px;
+}
+.promo-content div{
+  height: 100%;
+}
+
+.about-content{
+  background: url("../images/about-content.png") no-repeat 25px 25px;
+}
+
+.search-content{
+  background: url("../images/search-content.png") no-repeat 0 40px;
+}
+
+
+footer{
+  height:100px;
+}
