@@ -224,6 +224,7 @@ $(document).ready(function(){
       $('.nav-bar').animate({'left': '-263'}, 300, function(){
         $('.step-list').animate({'left': '0'}, 300);
         $('.location-path2').show();
+        $('.map-radius').hide();
       });
     }else if(parseInt($('.step-list').css('left')) == 0){
 
@@ -231,6 +232,7 @@ $(document).ready(function(){
       $('.nav-list').animate({'left': '-313'}, 300, function(){
         $('.step-list').animate({'left': '0'}, 300);
         $('.location-path2').show();
+        $('.map-radius').hide();
       });
       showNav = true;
     }
