@@ -208,7 +208,7 @@ input[type=range]:focus::-ms-fill-upper {
  /*nav bar area*/
 
 .nav-bar{
-  background: url("../images/nav.png") no-repeat 0 -14px;
+  background: url("../images/nav.png") no-repeat 0 -7px;
   position: absolute;
   top: 0;
   left: 0;
