@@ -42,8 +42,8 @@ $(document).ready(function(){
   var zoomWidth;
   var zoomHeight;
   var zoomValue = parseInt($('.zoom-slider').val());
-  var mapWidth = $('.map').css("width").replace('px','');
-  var mapHeight = $('.map').css("height").replace('px','');
+  var mapWidth = 1000;
+  var mapHeight = 1200;
 
   // zoom area
   $('.zoom-out').click(function(){
