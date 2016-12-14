@@ -40,8 +40,6 @@ header{
   margin: 23px 0;
   overflow: hidden;
 }
-.map{
-}
 .location-pin{
   position: absolute;
   top: 487px;
@@ -70,8 +68,8 @@ header{
 .map-type img{
   display: block;
   margin: 10px auto;
+  cursor: pointer;
 }
-
 .zoom-area{
   position: absolute;
   top: 1030px;
@@ -278,7 +276,12 @@ input[type=range]:focus::-ms-fill-upper {
   padding-left: 22px;
   padding-bottom: 20px;
   height: 970px;
-  width: 280px;
+  width: 275px;
+  cursor: pointer;
+}
+
+.poster-slider{
+  cursor: pointer;
 }
 
 
@@ -323,6 +326,14 @@ input[type=range]:focus::-ms-fill-upper {
 
 .search-content{
   background: url("../images/search-content.png") no-repeat 0 40px;
+}
+.search-list{
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  left: 50px;
+  top: 240px;
+  cursor: pointer;
 }
 
 
