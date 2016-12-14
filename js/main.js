@@ -39,6 +39,44 @@ $(document).ready(function(){
     $('.map').attr('src', 'images/map.png');
   })
 
+  var zoomValue = parseInt($('.zoom-slider').val());
+  var mapWidth = $('.map').css("width").replace('px','');
+  var mapHeight = $('.map').css("height").replace('px','');
+
+  // zoom area
+  $('.zoom-out').click(function(){
+    $('.zoom-in').prop('disabled', false).css('opacity', '1');
+    zoomValue -= 0.2;
+    $('.zoom-slider').val(zoomValue);
+    if(zoomValue == 1){
+      $(this).prop('disabled', true).css('opacity', '0.3');
+    }
+    var zoomWidth = mapWidth * zoomValue;
+    var zoomHeight = mapHeight * zoomValue;
+    $('.map').animate({
+      width: zoomWidth,
+      marginLeft: $('.map-container').width()/2 - zoomWidth/2,
+      marginTop: $('.map-container').height()/2 - zoomHeight/2,
+    }, 200);
+  })
+
+  $('.zoom-in').click(function(){
+    $('.zoom-out').prop('disabled', false).css('opacity', '1');
+    zoomValue += 0.2;
+    $('.zoom-slider').val(zoomValue);
+    if(zoomValue > 1.9){
+      $(this).prop('disabled', true).css('opacity', '0.3');
+    }
+    var zoomWidth = mapWidth * zoomValue;
+    var zoomHeight = mapHeight * zoomValue;
+    $('.map').animate({
+      width: zoomWidth,
+      marginLeft: $('.map-container').width()/2 - zoomWidth/2,
+      marginTop: $('.map-container').height()/2 - zoomHeight/2,
+    }, 200);
+  })
+
+
   // nav bar
 
   // store btn
